@@ -1,0 +1,39 @@
+##Here are the testing samples for the functions created
+
+
+## Test 1
+> mdat1 <- matrix(c(1,7, 6,8), nrow = 2, ncol = 2)
+> 
+> mdat1
+     [,1] [,2]
+[1,]    1    6
+[2,]    7    8
+> 
+> mc_mdat1 <- makeCacheMatrix(mdat1)
+> 
+> cs_mdat1 <- cacheSolve(mc_mdat1)
+> 
+> cs_mdat1
+           [,1]        [,2]
+[1,] -0.2352941  0.17647059
+[2,]  0.2058824 -0.02941176
+> 
+
+
+## Test 2
+> mdat2 <- matrix(c(11,3, 2,9), nrow = 2, ncol = 2)
+> 
+> mdat2
+     [,1] [,2]
+[1,]   11    2
+[2,]    3    9
+> 
+>  
+> mc_mdat2 <- makeCacheMatrix(mdat2)
+> 
+> cs_mdat2 <- cacheSolve(mc_mdat2)
+>  
+> cs_mdat2
+            [,1]        [,2]
+[1,]  0.09677419 -0.02150538
+[2,] -0.03225806  0.11827957
