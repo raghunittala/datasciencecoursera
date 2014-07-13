@@ -5,6 +5,7 @@
 ## number of completely observed observations (on all
 ## variables) required to compute the correlation between
 ## nitrate and sulfate; the default is 0
+
 corr <- function(directory, threshold = 0) {
   correlations <- numeric(0)
   csvfiles <- list.files(directory)
