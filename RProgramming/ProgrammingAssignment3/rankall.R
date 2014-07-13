@@ -4,7 +4,7 @@ rankall <- function(outcome, num = "best") {
     states <- sort(unique(data$State))
     
     ## Check that State and Outcome are Valid
-    
+
     if (outcome == "heart attack") {
         outcomesdata <- data[, c(7, 11, 2)] }
     else if (outcome == "heart failure") {
@@ -13,7 +13,7 @@ rankall <- function(outcome, num = "best") {
         outcomesdata <- data[, c(7, 23, 2)] }
     else {
         stop("invalid outcome") }
-    
+
     ## For each state, find the hospital of the given rank
     outcomesdata[, 2] <- suppressWarnings(as.numeric(outcomesdata[, 2]))
     removena <- na.omit(outcomesdata)
@@ -48,7 +48,7 @@ rankall <- function(outcome, num = "best") {
         }
         final <- rbind(final, values)
     }
-    
+
     result <- final[, c(3, 1)]
     ## Return a data frame with the hospital names and the
     ## (abbreviated) state name
