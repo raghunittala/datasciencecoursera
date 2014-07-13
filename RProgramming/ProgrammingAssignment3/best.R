@@ -3,13 +3,13 @@ best <- function(state, outcome) {
     data <- read.csv("outcome-of-care-measures.csv", colClasses ="character")
     
     states <- unique(data$State)
-    
+
     ## Check that State and Outcome are Valid
     if (!(state %in% states)) {
         stop("invalid state") }
     else {
         statesdata <- data[data$State == state, ]}
-    
+
     if (outcome == "heart attack") {
         outcomesdata <- statesdata[, c(7, 11, 2)] }
     else if (outcome == "heart failure") {
