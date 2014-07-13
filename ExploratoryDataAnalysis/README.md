@@ -1,1 +1,4 @@
-## Repository for Coursera Exploratory Data Analysis course
+Coursera Exploratory Data Analysis
+======================
+
+Repository for Coursera Exploratory Data Analysis module.
