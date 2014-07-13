@@ -18,10 +18,10 @@ rankhospital <- function(state, outcome, num = "best") {
         outcomesdata <- statesdata[, c(7, 23, 2)] }
     else {
         stop("invalid outcome") }
-    
+
     outcomesdata[, 2] <- suppressWarnings(as.numeric(outcomesdata[, 2]))
     removena <- na.omit(outcomesdata)
-    
+
     if (num == "best"){
         rownum <- 1
     }
@@ -36,9 +36,9 @@ rankhospital <- function(state, outcome, num = "best") {
             return(NA)
         }
     }
-    
+
     ## Return hospital name in that state with the given rank 30-day death rate
-    
+
     final <- removena[order(removena[, 2], removena[, 3]),]
     return(final[rownum, 3])
 }
