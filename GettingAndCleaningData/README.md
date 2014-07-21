@@ -21,11 +21,6 @@ This R script does the following:
 4. Appropriately labels the data set with descriptive activity names.
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-This script should be run in a folder of the Samsung data (the zip had this folder: UCI HAR Dataset) The script assumes it has in it's working directory the following files and folders:
-
-activity_labels.txt
-features.txt
-test/
-train/
+This script should be run in a folder of the Samsung data (the zip had this folder: UCI HAR Dataset) The script assumes it has in it's working directory these files and folders: activity_labels.txt, features.txt, test/, train/
 
 The output is created in two files - tidy_data.txt and tidy_data_with_means.txt
